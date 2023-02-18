@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nombre": "Zapatillas",
+        "precio": "29900",
+        "stock": "20"
+    },
+    {
+        "id": 2,
+        "nombre": "Poleras",
+        "precio": "9990",
+        "stock": "10"
+    },
+    {
+        "id": 3,
+        "nombre": "Zapatos",
+        "precio": "34990",
+        "stock": "15"
+    },
+    {
+        "id": 4,
+        "nombre": "Poleron",
+        "precio": "19990",
+        "stock": "3"
+    },
+    {
+        "id": 5,
+        "nombre": "Chaqueta",
+        "precio": "39990",
+        "stock": "5"
+    },
+    {
+        "id": 6,
+        "nombre": "Guantes",
+        "precio": "5990",
+        "stock": 4
+    }
+]
