@@ -2,7 +2,7 @@ import json
 import os
 from colorama import Fore, Back, Style
 from bodega import crear_producto, mostrar_productos, uni_disp_producto, uni_disp_producto_sel, mostrar_productos_cant, actualizar_stock
-from ventas import compra_producto
+from venta import compra_producto
 
 # Configurar Colorama
 Fore.GREEN = '\033[92m'
