@@ -3,7 +3,7 @@ import os
 import time
 from colorama import Fore, Back
 # Cargar los productos desde el archivo externo
-with open("cliente.json", "r") as archivo:
+with open("clientes.json", "r") as archivo:
     clientes = json.load(archivo)
 # Cargar los productos desde el archivo externo
 with open("bodega.json", "r") as archivo:
@@ -53,7 +53,6 @@ def compra_producto():
     while cantOk:
         print(Back.GREEN + Fore.WHITE + "************************" + Back.RESET)
         producto_cant = input("Ingrese cantidad: ")
-        print(valida_numero(producto_cant))
         if not valida_numero(producto_cant):
             print('Debes ingresar un número')
             continue

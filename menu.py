@@ -1,6 +1,7 @@
 import json
 import os
 from colorama import Fore, Back, Style
+from ventas import crear_cliente, mostrar_clientes
 from bodega import crear_producto, mostrar_productos, uni_disp_producto, uni_disp_producto_sel, mostrar_productos_cant, actualizar_stock
 from venta import compra_producto
 
@@ -24,18 +25,21 @@ def control_ventas():
         print(Fore.GREEN + "1. Registrar nuevo Cliente" + Fore.RESET)
         print(Fore.GREEN + "2. Mostrar N° de Clientes Registrado" + Fore.RESET)
         print(Fore.GREEN + "3. Comprar" + Fore.RESET)
+        print(Fore.GREEN + "0. Salir" + Fore.RESET)
       
         opcion = input(Fore.YELLOW + "Selecciona una opción: " + Fore.RESET)
 
         if opcion == "1":
+            os.system("cls" if os.name == "nt" else "clear")
             pass
         elif opcion == "2":
-            pass
+            mostrar_clientes()
         elif opcion == "3":
             compra_producto()
         elif opcion == "0":
             break
         else:
+            os.system("cls" if os.name == "nt" else "clear")
             print(Back.RED + Fore.WHITE + "Opción inválida" + Back.RESET + Fore.RESET)
 
 #Menú Control Bodega
